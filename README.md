@@ -8,8 +8,7 @@ Strongly based on [Dhruv](https://medium.com/@dhruvp) 's [**work**](https://medi
 Here it is maintain the same idea of writing a **Andrej Karpathy’s** [**blog post**](http://karpathy.github.io/2016/05/31/rl/),  program form scratch, in less than **250 lines**. 
 
 
-
-
+Here it is maintain the same idea of writing a **python** program form scratch, in less than **250 lines**. 
 
 ## Objectives
 
