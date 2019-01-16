@@ -1,21 +1,17 @@
 # AI-to-win-at-Atari-Pong
 **Reinforment Learning**: writting a **Python** program to win at Atari Pong with *Open AI Gym*.
 
+Strongly  based on **Andrej Karpathy’s** [**blog_post**](http://karpathy.github.io/2016/05/31/rl/). 
 
 
-Strongly based on [Dhruv](https://medium.com/@dhruvp) 's [**work**](https://medium.com/@dhruvp/how-to-write-a-neural-network-to-play-pong-from-scratch-956b57d4f6e0) which is based on **Andrej Karpathy’s** [**blog_post**](http://karpathy.github.io/2016/05/31/rl/). 
+In this repo I tried to **boost** this model a bit, and I noticed a strong reaction of this model to the learning rate, the original code started with a learning rate of 1e-4, and according to the blog it takes like 8000 episodes and 3 days to start to beat the computer, while with a learning rate 1e-3 it takes less than 2000 episodes to start beating the computer and that's quite good
 
-Here it is maintain the same idea of writing a **Andrej Karpathy’s** [**blog post**](http://karpathy.github.io/2016/05/31/rl/),  program form scratch, in less than **250 lines**. 
-
-
-Here it is maintain the same idea of writing a **python** program form scratch, in less than **250 lines**. 
 
 ## Objectives
 
 Implement a Neural Network for Reinforcement Learning and see it learn more and more as it finally becomes good enough to beat the computer in the Atari game Pong! 
 
 ![img](https://lh5.googleusercontent.com/K6eXjuSzBjvnC7v_ywlHDPT1YgncpLvpV3P5yUvzRn_DGbXeFoKSoSqEZWZ32OhUZjcmhr5_VzmY5RPzjOeFOzXIcWyokBuX9_mtYhAvssk21onMOGNg0U01bEs-yvglVG9Vrh0Ublo)
-
 
 
 ### Problem
@@ -78,4 +74,9 @@ Implement a Neural Network for Reinforcement Learning and see it learn more and 
 2. If we won a game, we’d like to generate more of these actions that led to us winning. If we lose, we’d like to generate less of these actions(**computing policy gradient**).
 
 These gradients will help us understand what direction to move our weights in for the greatest improvement. After we have finished batch_size episodes, we finally update our weights for our Neural Network and implement our learnings by apply the **RMSProp** algorithm.
+
+### Bosting
+
+It is possible to boost the algorithm tweaking a bit with the learning rate. With a learning rate to for example 1e-3 the algorithms takes less than 5000 episodes to win a game. Even more with smaller values(4-8) improve the speed of the algorithm compare to bigger values(9-16) finally adding neurons improves the performance but requires more computational power.
+
 
