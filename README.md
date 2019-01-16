@@ -7,7 +7,6 @@ Strongly  based on **Andrej Karpathy’s** [**blog_post**](http://karpathy.githu
 
 In this repo I tried to **boost** this model a bit, and I noticed a strong reaction of this model to the learning rate, the original code started with a learning rate of 1e-4, and according to the blog it takes like 8000 episodes and 3 days to start to beat the computer, while with a learning rate 1e-3 it takes less than 2000 episodes to start beating the computer and that's quite good
 
-Here it is maintain the same idea of writing a **Andrej Karpathy’s** [**blog post**](http://karpathy.github.io/2016/05/31/rl/),  program form scratch, in less than **250 lines**. 
 
 ## Objectives
 
